@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JVR CONSULTORIA</title>
+<style>
+  /* Estilos de formatação do menu */
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  ul.menu {
+    list-style-type: none;
+    background-color: #E4E3E2;
+    text-align: center;
+    padding: 20px;
+    margin: 0%;
+    border: 1px solid #555;
+  }
+  ul.menu li {
+    display: inline-block;
+    margin-right: 40px;
+  }
+  ul.menu li a {
+    font-family: "Open Sans", Sans-serif;
+    font-weight: 700;
+    height: 15px;
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+  }
+  ul.menu li a:hover {
+    border-bottom: 1px solid #000000;
+    height: 1px;
+    
+  }
+  .faixa-jvr {
+    display: flex;
+    align-items: center;
+    background-image: url(../LP/fotos/fundobranco.png);
+    background-color: #fff;
+  }
+
+
+
+  .texto-jvr{
+    width: 570px;
+    text-align:justify;
+    padding-left: 15%;
+  }
+
+  .texto-jvr p{
+    font-size: 18px;
+    font-family: "Open Sans", Sans-serif;
+    color: #000000;
+    text-align: justify;
+    width: 500px;
+  }
+
+  .texto-jvr h3{
+    font-size: 18px;
+  }
+
+  .texto-jvr h1{
+    color: #000000;
+    font-family: "Open Sans", Sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+  }
+  .foto-jvr{
+    flex: 1.5;
+    padding: 80px;
+  }
+  .foto-jvr img{
+    max-width: 100%;
+    height: 400px;
+  
+  }
+
+
+
+/*consult */
+
+.faixa-consult {
+    background-image: url(../LP/fotos/setor-adminn.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row-reverse; /* Troca a direção dos elementos */
+    align-items: flex-start;
+    padding: 20px;
+    text-align: center;
+    flex-wrap: wrap;
+    width: 1651px, 711px;
+    padding-bottom: 100px;
+    padding-top: 50px;
+  }
+
+  .faixa-consult h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    width: 100%;
+    font-family: "Open Sans", Sans-serif;
+    padding-bottom: 40px;
+  }
+
+  .texto-consult {
+    flex: 1;
+    text-align: justify;
+    
+  }
+
+  .texto-consult p{
+    font-size: 18px;
+    margin: 16px 0;
+    padding-bottom: 30px;
+    font-family: "Open Sans", Sans-serif;
+    color: #000000;
+    max-width: 800px;
+  }
+  /* Estilos da imagem */
+  .foto-consult{
+    flex: 0.7;
+  }
+  .foto-consult img {
+    text-align: center;
+    width: 250px;
+    margin-right: -200px;
+  }
+
+  .faixa-somos {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(../LP/fotos/sobre-nosbcg.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinhar ao topo */
+    padding-bottom: 60px;
+    padding-top: 40px;
+  }
+
+  .foto-somos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+    font-family: "Open Sans", Sans-serif;
+    margin-top: 10%;
+  }
+
+  .foto-somos h2{
+    font-size: 45px;
+    padding-bottom: 10%;
+  }
+  .foto-somos img {
+    max-width: 570px;
+  }
+
+  .texto-somos {
+    padding-top: 50px;
+    flex: 1;
+    text-align: justify;
+    margin: 0 20px;
+    max-width: 500px;
+  }
+
+  .texto-somos p { 
+    font-family: sans-serif;
+    font-size: 18px; 
+
+  }
+
+
+  .faixa-servicos {
+    display: flex;
+    flex-direction: column; /* Alinhar os blocos verticalmente */
+    align-items: center;
+    text-align: justify;
+    background-image: url(../LP/fotos/fundoservicos.jpg);
+    background-size: 100%;
+
+  }
+
+  .faixa-servicos h1 {
+    font-family: sans-serif;
+    margin-bottom: 80px; /* Espaçamento abaixo do título */
+    margin-top: 60px;
+    height: 500;
+    font-size: 45px;
+  }
+
+  .faixa-servicos .servico1,
+  .faixa-servicos .servico2,
+  .faixa-servicos .servico3,
+  .faixa-servicos .servico4 {
+    margin-bottom: 20px; /* Espaçamento entre os blocos de serviços */
+    background-color: #ffff;
+    padding: 5%;
+    box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.623);
+    border-radius: 8px;
+  }
+
+
+  .faixa-servicos p {
+    margin: 10px 0; /* Espaçamento vertical para os parágrafos */
+    max-width: 800px;
+    font-size: 18px;
+    padding-bottom: 30px;
+    font-family: sans-serif;
+  }
+
+  .faixa-servicos button {
+    margin-top: 10px; /* Espaçamento acima dos botões */
+    margin-bottom: 10px;
+    font-family: "Open Sans", Sans-serif;
+    font-weight: 500;
+    fill: #000000;
+    color: #000000;
+    background-color: #48F05F;
+    border: 0;
+    font-size: 18px;
+    padding: 20px 40px;
+    border-radius: 5px;
+
+    margin-bottom: 30px;
+  }
+
+  .faixa-servicos h2{
+    font-size: 35px;
+    padding-bottom: 20px;
+    font-family: sans-serif;
+  }
+
+.faixa-canais{
+  background-color: #10285E;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.faixa-canais h1{
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 45px;
+  text-align: center;
+  padding-right: 10%;
+
+  }
+
+  .faixa-canais h3{
+    color: #fff;
+    font-family: sans-serif;
+    padding-right: 10%;
+    font-size: 20px;
+  }
+
+  .faixa-canais img{
+    padding-right: 2%;
+    width: 50px;
+    height: 50px;
+    padding-inline: 20px;
+    
+  }
+
+  #contato-formulario {
+   margin-left: 25%;
+    max-width: 800px;
+    background-color: #10285E;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  #contato-formulario h1 {
+    margin-bottom: 20px;
+    font-size: 45px;
+    font-family: sans-serif;
+    color: #fff;
+  }
+
+  #contato-formulario form {
+    display: grid;
+    gap: 10px;
+  }
+
+  #contato-formulario label {
+    display: block;
+    font-weight: bold;
+  }
+
+  #contato-formulario input,
+  #contato-formulario textarea {
+    width: 40%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  #contato-formulario button {
+    background-color: #fff;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  #faixa-formulario{
+    padding: 60px;
+  }
+
+
+  @media (max-width: 768px){
+    ul.menu {
+    list-style-type: none;
+    background-color: #E4E3E2;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    border: 1px solid #555;
+  }
+  ul.menu li {
+    display: block; /* Alterado para display de bloco em dispositivos móveis */
+    margin-bottom: 10px; /* Adicionado espaçamento entre os itens */
+  }
+  ul.menu li a {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    display: block;
+    color: #000000;
+    padding: 10px; /* Reduzido o padding para melhor ajuste em dispositivos móveis */
+    text-decoration: none;
+  }
+  ul.menu li a:hover {
+    border-bottom: 1px solid #000000;
+  }
+  .faixa-jvr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../LP/fotos/fundobranco.png);
+    background-color: #fff;
+    padding: 20px;
+  }
+
+  .foto-jvr {
+    padding: 20px;
+  }
+
+  .foto-jvr img {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+  }
+
+  .texto-jvr {
+    text-align: center;
+    padding: 0 20px;
+    margin-top: 20px;
+  }
+
+  .texto-jvr p {
+    margin-left: 30px;
+    font-size: 15px;
+    font-family: "Open Sans", sans-serif;
+    color: #000000;
+    text-align: center;
+  }
+
+  .texto-jvr h1 {
+    color: #000000;
+    font-family: "Open Sans", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+
+    .texto-jvr {
+      margin-top: 10px;
+    }
+
+
+    .faixa-consult {
+    background-image: url(../LP/fotos/setor-adminn.jpg);
+    background-size: 100%;
+    background-repeat: repeat;
+    display: flex;
+    flex-direction: column; /* Alterado para empilhar os elementos em dispositivos móveis */
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    padding-bottom: 100px;
+    padding-top: 50px;
+  }
+
+  .faixa-consult h1 {
+    font-size: 30px; /* Reduzido o tamanho da fonte para dispositivos móveis */
+    margin-bottom: 20px;
+    width: 100%;
+    font-family: "Open Sans", sans-serif;
+    padding-bottom: 20px; /* Reduzido o espaçamento inferior */
+  }
+
+  .texto-consult {
+    text-align: justify;
+    margin: 0 auto; /* Centralizado o bloco de texto */
+    max-width: 800px;
+    padding-bottom: 30px;
+  }
+
+  .texto-consult p {
+    font-size: 16px; /* Reduzido o tamanho da fonte para dispositivos móveis */
+    margin: 16px 0;
+    font-family: "Open Sans", sans-serif;
+    color: #000000;
+  }
+
+  .foto-consult img {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    margin: 0 auto; /* Centralizado a imagem */
+  }
+  
+
+  .faixa-somos {
+    background-size: 100%;
+    background-repeat: repeat;
+    background-image: url(../LP/fotos/sobre-nosbcg.jpg);
+    display: flex;
+    flex-direction: column; /* Alterado para empilhar os elementos em dispositivos móveis */
+    justify-content: center;
+    align-items: center; /* Centralizado verticalmente */
+    padding-bottom: 60px;
+    padding-top: 40px;
+  }
+
+  .foto-somos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+    font-family: "Open Sans", sans-serif;
+    margin-top: 10%;
+  }
+
+  .foto-somos h2{
+    font-size: 30px; /* Reduzido o tamanho da fonte para dispositivos móveis */
+    padding-bottom: 10%;
+  }
+
+  .foto-somos img {
+    max-width: 100%; /* Largura máxima */
+    height: auto; /* Altura automática */
+  }
+
+  .texto-somos {
+    padding-top: 20px; /* Reduzido o espaçamento superior */
+    text-align: justify;
+    margin: 0 20px;
+    max-width: 100%; /* Largura máxima */
+  }
+
+  .texto-somos p { 
+    font-family: sans-serif;
+    font-size: 16px; /* Reduzido o tamanho da fonte para dispositivos móveis */
+    margin-bottom: 20px; /* Espaçamento inferior entre os parágrafos */
+  }
+
+  .faixa-servicos h2{
+    font-size: 20px;
+  }
+  .faixa-servicos p{
+    font-size:10px;
+  }
+
+  .faixa-canais {
+    background-color: #10285E;
+    justify-content: center;
+    display: flex;
+    flex-direction: column; /* Alterado para empilhar os elementos em dispositivos móveis */
+    align-items: center;
+    padding: 20px;
+  }
+
+  .faixa-canais h1 {
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 30px; /* Reduzido o tamanho da fonte para dispositivos móveis */
+    text-align: center;
+    padding-right: 0; /* Removido o espaçamento à direita */
+    margin-bottom: 10px; /* Espaçamento inferior */
+  }
+
+  .faixa-canais h3 {
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 16px; /* Reduzido o tamanho da fonte para dispositivos móveis */
+    text-align: center;
+    padding-right: 0; /* Removido o espaçamento à direita */
+    margin-bottom: 10px; /* Espaçamento inferior */
+  }
+
+  .faixa-canais img {
+    width: 30px; /* Reduzido o tamanho da imagem para dispositivos móveis */
+    height: 30px; /* Reduzido o tamanho da imagem para dispositivos móveis */
+    margin: 5px; /* Espaçamento entre as imagens */
+  }
+
+  #contato-formulario {
+    max-width: 90%; /* Ajustado o máximo de largura para dispositivos móveis */
+    margin: 0 auto; /* Centralizado horizontalmente */
+    background-color: #10285E;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  #contato-formulario h1 {
+    margin-bottom: 20px;
+    font-size: 30px; /* Reduzido o tamanho da fonte para dispositivos móveis */
+    font-family: sans-serif;
+    color: #fff;
+  }
+
+  #contato-formulario form {
+    display: grid;
+    gap: 10px;
+  }
+
+  #contato-formulario label {
+    display: block;
+    font-weight: bold;
+  }
+
+  #contato-formulario input,
+  #contato-formulario textarea {
+    width: 80%; /* Largura total */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  #contato-formulario button {
+    background-color: #fff;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  #faixa-formulario {
+    padding: 20px; /* Reduzido o espaçamento */
+  }
+
+  }
+
+
+</style>
+</head>
+<body>
+  <ul class="menu">
+    <li><a href="#jvr">A JVR</a></li>
+    <li><a href="#quem-somos">QUEM SOMOS</a></li>
+    <li><a href="#servicos">SERVIÇOS</a></li>
+    <li><a href="#canais">CANAIS</a></li>
+    <li><a href="#contact">CONTATO</a></li>
+  </ul>
+
+  <div  class="faixa-jvr">
+    <div class="texto-jvr" id="jvr">
+        <p>Olá, seja bem vindo a</p>
+        <h1>JVR Consultoria</h1>
+        <p>Parceiros Oficiais do Mercado Livre, estamos entre as <br> consultorias reconhecidas por resultados expressivos no <br>crescimento em vendas de nossos clientes. São dezenas de <br>empresas assessoradas e múltiplos milhões em faturamento.</p>
+    </div>
+    
+
+    <div class="foto-jvr">
+        <img src="C:\Users\Estudos\Desktop\WEB STANDART\LP\JOAO.png" alt="imagem-joao">
+      </div>
+
+  </div>
+  
+  <div class="faixa-consult">
+    <h1>Consultoria Certificada</h1>  
+    <div class="texto-consult">
+         <p>Uma consultoria certificada que ajudará o vendedor a escalar sua operação de <br> maneira sustentável, tendo como resultado o aumento em vendas e <br> principalmente na qualidade do atendimento.</p>
+         <p>Entendemos que é função do consultor orientar o vendedor para que tome <br> conhecimento e ultilize ao máximo as soluções disponíveis no ecossistema <br> do MELI e assim, oferecer atendimento excelente proporcionando a melhor <br> experiência para seus clientes.</p>
+         <p>A transferência de conhecimento será o divisor de águas para o <br>empreendedor que almeja crescimento de forma sustentável e lucrativa.</p>
+    </div>
+    <div class="foto-consult">
+        <img src="../LP/fotos/Medalha-certificacao-Silver-1-217x300.jpeg" alt="">
+    </div>
+    
+  </div>
+
+  <div id="quem-somos" class="faixa-somos">
+    <div class="foto-somos">
+      <h2>Quem Somos</h2>
+    <img src="../LP/fotos/image-quemsomos.png" alt="">
+  </div>
+    <div class="texto-somos">
+      <p>
+          A JVR CONSULTORIA surgiu da necessidade de aprendizagem
+          contínua, ação na zona de desconforto e DNA empreendedor
+          de alguns vendedores ativos nas mais diversas plataformas de vendas
+          on-line.
+      </p>
+        <br>
+      <p>
+        Nossa base de conhecimento tem como origem cursos
+        universitários, especilaizações em instituições renomadas
+        como Sebrae, Senac, a própria central do vendedor do
+        Mercado Livre, anos vendendo no marketplace e vasta 
+        experiência no comércio tradicional onde alguns de 
+        nossos consultores exerceram cargos de gestão e liderança.
+
+      </p>
+      <br>
+      <p>
+        Com uma operação de sucesso, nos vimos disputando
+        mercado com players tradicionais de nosso mercado em
+        meio a uma pandemia onde com poucos recursos, não 
+        podíamos nos dar ao luxo de errar. Cada passo era 
+        minunciosamente estudado. Ações cirurgicas eram 
+        testadas e implantadas o mais rápido possível. A partir 
+        daí, passamos a ajudar parceiros e alguns amigos a
+        escalar vendas usando a metodologia desenvolvida no processo.
+      </p>
+      <br>
+      <p>
+        Em 2021 percebemos o valor do conhecimento que a jornada de vendas 
+        no Mercado Livre havia nos proporcionado. Buscamos junto a Empresa 
+        Mercado Livre, uma certificação necessária para fazer este trabalho 
+        de forma alinhada com seus valores, missão e visão.
+      </p>
+      <br>
+      <p>
+        Hoje somos Parceiros Oficias reconhecidos por resultados, com isso temos 
+        acesso a informações relevantes e apoio no atendimento dos clientes vinculados 
+        a nossa consultoria através do granteamento. São dezenas de empresas assessoradas 
+        e alguns milhões em faturamento.
+      </p>
+    </div>
+    
+  </div>
+ 
+  <div class="faixa-servicos" id="servicos"><h1>Nossos Serviços</h1>
+    <div class="servico1">
+      <h2>Você cresceu | Consultoria</h2>
+      <br>
+      <h3>Para quem é este programa?</h3>
+      <p>Para você que já é um vendedor profissional mas quer levar seu negócio ao
+        próximo nível? Este programa é o ideal para você! Construímos esse programa 
+        idealizando ele para vendedores e vendedoras que buscam escalar seu negócio 
+        em nossa plataforma de uma maneira inovadora.
+      </p>
+      <p>
+        São 3 meses de consultoria especializada, com um consultor certificado por nós, 
+        do Mercado Livre, onde você vai: Desenvolver um plano de negócio completo e personalizado 
+        para sua empresa; Aprender conteúdos referentes à Gestão de Vendas, Financeira, de Pessoas, 
+        Operacional, Logística e de Marca; Ter atendimento personalizado semanal com um consultor 
+        certificado; Participar cada vez mais de campanhas comerciais do Mercado Livre.
+      </p>
+      
+    </div>
+
+    <button>Saiba Mais</button>
+    <br>
+    <div class="servico2">
+      <h2>Mentoria Anual JVR</h2>
+      <p>
+        Esse programa é para empresas e empresários que conhecem os desafios do comércio de bens físicos 
+        e procuram direção e experiência para uma escalada segura em vendas on-line. Você deseja alcançar 
+        os grandes vendedores no seu segmento dentro da plataforma do Mercado Livre? Então esta mentoria 
+        é para você e sua equipe.
+      </p>
+      <p>
+        Este programa foi desenvolvido por vendedores experientes, consultores certificados e o time comercial da 
+        JVR Consultoria. Conhecemos a necessidade de exponencializar o seu negócio para além das barreiras físicas 
+        e distâncias territoriais. Nossa mentoria irá levar os seus produtos e sua marca para todos os cantos deste 
+        país de dimensões continentais de uma maneira inovadora, legítima e real. Aqui não ensinamos nenhum segredo, 
+        apenas mostramos o caminho correto para obter recorrência na maior plataforma de vendas da América Latina.
+      </p>
+      <p>
+        O conteúdo foi desenvolvido para empreendedores que faturam acima de R$ 80.000,00 e desejam chegar a medalha Platinum 
+        no Mercado Livre de maneira consistente, saudável e lucrativa em até 12 meses. Esta é a Mentoria JVR!
+      </p>
+
+      <p>
+        O programa consiste em um acompanhamento semanal e on-line aplicada por nossos Consultores Certificados. Após uma análise 
+        minuciosa que envolve seu segmento, a concorrência, as potencialidades do seu negócio, apontaremos os pontos chave a serem 
+        trabalhados a fim de identificar oportunidades que nos levarão até o próximo nível com o objetivo de alcançar a medalha 
+        máxima na plataforma, aumentar a presença on-line da sua marca e consolidar-se como um “Big-Player” dentro do seu segmento 
+        junto a Plataforma. O processo envolve um plano de negócios que consiste em Gestão de Vendas, Gestão Financeira, Precificação, 
+        Gestão de Pessoas, Operacional, Logística e de Marca.
+      </p>
+
+      <p>
+        Caso tenha se identificado com este programa de mentoria, não perca tempo, inscreva-se agora e vamos crescer juntos!
+      </p>
+    </div>
+    <button>Saiba Mais</button>
+    <br>
+    <div class="servico3">
+      <h2>Análise de Conta | 1h </h2>
+      <p>
+        Análise de uma conta de Mercado Livre, observando os principais pontos a serem melhorados e incentivo aos pontos fortes da operação.
+      </p>
+      <p>
+        Este encontro dura 01 (uma) hora, é realizado por um consultor especializado e entrega um diagnóstico completo do caminho a ser seguido.
+      </p>
+    </div>
+    <button>Saiba Mais</button>
+    <br>
+    <div class="servico4">
+      <h2>Análise de Conta | 2h</h2>
+      <p>
+        Análise de uma conta de Mercado Livre, observando os principais pontos a serem melhorados e incentivo aos pontos fortes da operação. 
+        Este encontro dura 02 (duas) horas, é realizado por um consultor especializado e entrega um diagnóstico completo do caminho a ser seguido.
+
+    </div>
+    <button>Saiba Mais</button>
+
+  </div>
+    
+
+
+  <div class="faixa-canais" id="canais">
+    <h1>Nossos Canais</h1>
+    <h3>@jconsultoria</h3>
+    <img src="../LP/fotos/instagram22.png" alt="Instagram">
+    <img src="../LP/fotos/youtube.png" alt="YouTube">
+  </div>
+
+  <div id="faixa-formulario" >
+  <div id="contato-formulario" id="contact">
+    <h1>Fale Conosco</h1>
+    <form action="#" method="post">
+      <div>
+        <label for="nome"></label>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+      </div>
+      <div>
+        <label for="email"></label>
+        <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+      </div>
+      <div>
+        <label for="telefone"></label>
+        <input type="tel" id="telefone" name="telefone" placeholder="Seu telefone" required>
+      </div>
+      <div>
+        <label for="mensagem"></label>
+        <textarea id="mensagem" name="mensagem" rows="4" placeholder="Sua Mensagem" required></textarea>
+      </div>
+      <div>
+        <button type="submit">Enviar</button>
+      </div>
+    </div>
+    </form>
+  </div>
+</html>
+</body>
+</html>

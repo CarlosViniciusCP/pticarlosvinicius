@@ -1,0 +1,41 @@
+/* reset de propriedades */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-image: 
+    linear-gradient(#404654, #3c4250, #3a404e);
+    background-repeat: no-repeat;
+    color: white;
+}
+
+/* mobile first */
+form div {
+    margin: 20px 0;
+    padding: 5px;
+    border-bottom: 1px solid red;
+}
+
+
+/* tablet */
+@media screen and (min-width: 768px){
+   
+}
+
+/* desktop */
+@media screen and (min-width: 992px) {
+   
+}
+
+/* telas largas */
+@media screen and (min-width: 1200px){
+    
+   
+}
